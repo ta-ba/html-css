@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/takashi.css">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <title>Document</title>
+  <script>
+  $(function(){
+    // #で始まるリンクをクリックしたら実行されます
+    $('a[href^="#"]').click(function() {
+      // スクロールの速度
+      var speed = 500; // ミリ秒で記述
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header_box">
+      <div class="logo">
+        <a href="#c0"><img src="img/img0.png" alt=""></a>
+      </div>
+      <div id="menu">
+      </div>
+      <div id="clear"></div>
+      <ul>
+        <li><a href="#c1">PROFILE</a></li>
+        <li><a href="#c2">RED&WHITE</a></li>
+        <li><a href="#c3">DEMO&nbsp&nbspPLAY</a></li>
+        <li><a href="#c4">TOUR&nbsp&nbspDATE</a></li>
+        <li><a href="#c5">MAIL</a></li>
+      </ul>
+    </div>
+    <script>
+      $(function() {
+        $("#menu,.header_box li a").click(function() {
+          $("#menu,.header_box li").toggleClass("on");
+        });
+      });
+      </script>
+    </div>
+  </header>
+  <section id="c0">
+    <div class="main_pic">
+      <div class="pic">
+        <div class="container">
+          <h2>『BASS WIZARD』</h2>
+          <h3>佐藤　崇 Ofiicial Home Page</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="c1">
+    <div class="box">
+      <div class="title">
+        <h1>Profile</h1>
+      </div>
+      <div class="main">
+        <div class="nav1">
+          <h2 class="text_t">
+            小学校から高校卒業まで、ブラスバンドでパーカショニストとして音楽を学ぶ。吹奏楽で全国大会出場。<br>マーチングでハワイ州の大会に招待され、海外遠征も経験。<br>
+            １８歳でベースに転向する。腕を磨きながらバンド活動に没頭。<br>
+            横浜を中心に活動中の「RED&WHITE」。仙台では「高橋泉と縄文JAZZオーケストラ」で活動中<br>
+            定禅寺ストリートジャズフェスティバル、他、様々なミュージックフェスティバルに出場多数。<br>
+            仙台七夕祭り公式ソング<br>
+            ‘仙台七夕織り姫プロジェクト,公式ソングバンドで、仙台七夕祭りメインステージでトリで出演。<br>
+            その他<br>
+            メジャーアーティスト、ミュージシャンと共演。<br>
+            高度な技術を要する演奏テクニックを駆使し、ジャンルを問わずに、様々なスタイルの音楽に対応。幅広くアーティストをサポートさせて頂いてます。<br>
+            ベースインストラクターとして指導や、音楽教室主催イベントなどの、デモンストレーション演奏を勢力的に行ってます。 </h2>
+        </div>
+        <div class="img_box">
+          <img src="img/img5.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="c2">
+    <div class="box">
+      <div class="title">
+        <h1>RED&WHITE</h1>
+      </div>
+      <div class="main">
+        <div class="nav1">
+          <h2 class="text_t">
+
+            <br>
+            2014年、音楽セミナーライブで共演した野口雅彦と東郷コウヘイの二名で結成。<br>
+            横浜を中心とし、都内でも活動する。<br>
+            <br>
+            アカデミックかつテクニカルなインストゥルメンタル楽曲を演奏するその音楽性は高く評価され、ドラマー・ギタリストといった同職のみならず、<br>
+            多くの音楽ファンからの支持を得ることとなる。<br>
+            <br>
+            2016年、佐藤崇をベーシストとして迎え現在のラインナップとなる。<br>
+            <br>
+            <br>
+            2019年。1stミニアルバム「A command for the union」を各DLサイト及びストリームサイトにてリリース。<br>
+            <br>
+            DLは<a href="https://www.tunecore.co.jp/artist?id=321440" target="_blank">こちらより。</a>
+          </h2>
+        </div>
+        <div class="img_box">
+          <img src="img/img13.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="c3">
+    <div class="box">
+      <div class="title">
+        <h1>DEMO&nbsp&nbspPLAY</h1>
+      </div>
+      <div class="main">
+        <div class="nav1">
+            <video src="img/demoplay.ogg" controls></video>
+        </div>
+        <div class="img_box">
+          <img src="img/img19.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="c4">
+    <div class="box">
+      <div class="title">
+        <h1>TOUR&nbsp&nbspDATE</h1>
+      </div>
+      <div class="main">
+        <div class="nav1">
+          <h2 class="text_t">
+            <div id="main">
+
+              <div class="wrap" id="main-content">
+                <div id="primary" class="site-content">
+                  <div id="content" role="main">
+                    <p>No upcoming shows scheduled.</p>
+                    <hr>
+                    <h2>Past Shows</h2>
+
+                    <table id="past-shows" class="shows">
+                      <tbody>
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">08</span><span class="bd-custom-month">Nov</span><span class="bd-custom-year">2015</span></div>
+                          </td>
+                          <td><strong>San Diego</strong><span class="mobile-hide">House of Blues San Diego</span></td>
+                          <td class="show-venue">House of Blues San Diego</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">07</span><span class="bd-custom-month">Nov</span><span class="bd-custom-year">2015</span></div>
+                          </td>
+                          <td><strong>Las Vegas</strong><span class="mobile-hide">Count's Vamp'd Rock Bar &amp; Grill</span></td>
+                          <td class="show-venue">Count's Vamp'd Rock Bar &amp; Grill</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">06</span><span class="bd-custom-month">Nov</span><span class="bd-custom-year">2015</span></div>
+                          </td>
+                          <td><strong>Beverly Hills</strong><span class="mobile-hide">Saban Theatre</span></td>
+                          <td class="show-venue">Saban Theatre</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">05</span><span class="bd-custom-month">Nov</span><span class="bd-custom-year">2015</span></div>
+                          </td>
+                          <td><strong>Agoura Hills</strong><span class="mobile-hide">The Canyon</span></td>
+                          <td class="show-venue">The Canyon</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">08</span><span class="bd-custom-month">Oct</span><span class="bd-custom-year">2013</span></div>
+                          </td>
+                          <td><strong>Sacramento, CA</strong><span class="mobile-hide">Harlow's Restaurant &amp; Nightclub</span></td>
+                          <td class="show-venue">Harlow's Restaurant &amp; Nightclub</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">06</span><span class="bd-custom-month">Oct</span><span class="bd-custom-year">2013</span></div>
+                          </td>
+                          <td><strong>San Juan Capistrano, CA</strong><span class="mobile-hide">The Coach House</span></td>
+                          <td class="show-venue">The Coach House</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">05</span><span class="bd-custom-month">Oct</span><span class="bd-custom-year">2013</span></div>
+                          </td>
+                          <td><strong>Ramona, CA</strong><span class="mobile-hide">Ramona Mainstage</span></td>
+                          <td class="show-venue">Ramona Mainstage</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">04</span><span class="bd-custom-month">Oct</span><span class="bd-custom-year">2013</span></div>
+                          </td>
+                          <td><strong>Las Vegas, NV</strong><span class="mobile-hide">Vamp'd</span></td>
+                          <td class="show-venue">Vamp'd</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="show-date">
+                            <div class="bd-custom-date"><span class="bd-custom-day">03</span><span class="bd-custom-month">Oct</span><span class="bd-custom-year">2013</span></div>
+                          </td>
+                          <td><strong>Agoura Hills, CA</strong><span class="mobile-hide">The Canyon</span></td>
+                          <td class="show-venue">The Canyon</td>
+                          <td class="show-action">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+          </h2>
+        </div>
+        <div class="img_box">
+          <img src="img/img9.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="c5">
+    <div id="info">
+      <h1>MAIL</h1>
+      <div class="mail_wrapper">
+        <form method="post" action="#" id="form1" name="form1">
+          <div class="add">
+            <h3>メールアドレス</h3>
+            <input type="email" size="30" name="mail"  required>
+          </div>
+          <div class="name">
+            <h3>お名前</h3>
+            <input type="text" size="20" name="namae" id="form2" required>
+          </div>
+          <div class="textarea">
+            <h3>お問合せの内容</h3>
+            <textarea name="naiyou" size="40" id="form3" placeholder="送信できません。" required></textarea>
+          </div>
+          <div class="input">
+            <input type="hidden" name="q" value="1">
+            <p><input type="submit" value="送信する"></p>
+          </div>
+        </form>
+      </div>
+  </section>
+
+
+  <div class="fooder_c">
+    <p> &copy; 2020 T.Satoh </p>
+  </div>
+</body>
+
+</html>
